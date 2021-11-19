@@ -26,6 +26,31 @@ namespace program10_13._11_
             Console.WriteLine("Результат:" + letter);
             letter = bCipher.Decode(letter);
             Console.WriteLine("Изначальное значение:" + letter);
+
+            Console.WriteLine("10.2");
+            Console.WriteLine("Введите изначальную позицию прямоугольника по горизонтали");
+            int horizontal = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите изначальную позицию прямоугольника по вертикали");
+            int vertical = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите длину стороны прямоугольника");
+            double weidth = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите ширину сторону прямоугольника");
+            double height = Convert.ToDouble(Console.ReadLine());
+            Color color = Color.white;
+            bool isVisible = true;
+            Rectangle rectangle = new Rectangle(horizontal, vertical,weidth,height, color, isVisible);
+            Console.WriteLine(rectangle);
+
+            Console.WriteLine("Введите изначальную позицию круга по горизонтали");
+            horizontal = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите изначальную позицию круга по вертикали");
+            vertical = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите радиус круга");
+            double radius = Convert.ToDouble(Console.ReadLine());
+            Color color1 = Color.blue;
+            isVisible = true;
+            Circle circle = new Circle(horizontal, vertical, radius, color1, isVisible);
+            Console.WriteLine(circle);
         }
     }
 }
